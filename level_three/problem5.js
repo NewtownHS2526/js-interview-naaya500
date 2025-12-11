@@ -13,6 +13,11 @@ function easyProblem1(ticketCategory, age) {
     // TODO: Write your code here
     // If ticketCategory is "Platinum" AND age is 18, return "can access"
     // Otherwise return "go home"
+    if (ticketCategory === "Platinum" && age === 18) {
+        return "can access";
+    }   else {
+    return "go home";
+    }   
 }
 
 // Test your code:
@@ -29,6 +34,12 @@ function easyProblem2(ticketCategory, age) {
     // TODO: Write your code here
     // If age is 18 AND ticketCategory is NOT "Platinum", return "can sign in"
     // Otherwise return "go home"
+    if (age === 18 && ticketCategory !== "Platinum") {
+        return "can sign in";
+    }   else {
+    return "go home";
+    }       
+
 }
 
 // Test your code:
@@ -54,6 +65,13 @@ function mediumProblem(ticketCategory, age) {
     // }
     //
     // Remember: Check ticketCategory === "Platinum" && age === 18 first!
+    if (ticketCategory === "Platinum" && age === 18) {
+        return "can access";
+    } else if (age === 18 && ticketCategory !== "Platinum") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }   
 }
 
 // Test your code:
@@ -81,6 +99,15 @@ function hardProblem(ticketCategory, age) {
     //     - Return "go home"
     //
     // Why is this structure better? Think about it!
+    if (age === 18) {   
+        if (ticketCategory === "Platinum") {
+            return "can access";
+        } else {        
+            return "can sign in";
+        }   
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:

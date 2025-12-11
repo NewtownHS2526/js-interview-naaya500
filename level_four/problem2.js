@@ -13,6 +13,10 @@ function easyProblem1(playerStatus, age) {
     // TODO: Write your code here
     // Use === to check if playerStatus equals "HighRoller" AND age equals 21
     // Return "can access" if true, otherwise "go home"
+    if (playerStatus === "HighRoller" && age === 21) {
+        return "can access";
+    }
+    return "go home";
 }
 
 // Test your code:
@@ -28,6 +32,11 @@ function easyProblem2(playerStatus, age) {
     // TODO: Write your code here
     // Check if age is 21 AND playerStatus is NOT "HighRoller"
     // Return "can sign in" if true, otherwise "go home"
+    if (age === 21 && playerStatus !== "HighRoller") {
+        return "can sign in";
+    }   else {
+    return "go home";
+    }   
 }
 
 // Test your code:
@@ -44,6 +53,13 @@ function mediumProblem(playerStatus, age) {
     // Use if-else if-else with && operator
     // Make sure to check all three conditions correctly
     // Remember: && means BOTH conditions must be true
+    if (playerStatus === "HighRoller" && age === 21) {
+        return "can access";
+    }   else if (age === 21 && playerStatus !== "HighRoller") {
+        return "can sign in";
+    }   else {
+    return "go home";
+    }   
 }
 
 // Test your code:
@@ -66,6 +82,15 @@ function hardProblem(playerStatus, age) {
     //   - If age is NOT 21:
     //     - Return "go home"
     // Use nested if-else statements!
+    if (age === 21) {
+        if (playerStatus === "HighRoller") {
+            return "can access";
+        }   else {
+        return "can sign in";
+        }           
+    }   else {
+    return "go home";
+    }   
 }
 
 // Test your code:
